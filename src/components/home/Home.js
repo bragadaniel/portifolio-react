@@ -29,7 +29,7 @@ const Home = () => (
         title="React Developer"
         company="SoundCloud"
         description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit!"
-        avatar={company_avatar} 
+        avatar={company_avatar}
       />
       
       <Experience
