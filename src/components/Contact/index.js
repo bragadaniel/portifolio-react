@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Row, Col, Card, Input, Button } from 'react-materialize';
 
-import UserProfile from '../user_profile/User_profile';
+import UserProfile from '../UserProfile';
 
 const Contact = () => (
   <Row>

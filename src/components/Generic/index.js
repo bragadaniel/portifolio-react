@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-materialize';
 
-const Generico = (props) => (
+const Generic = (props) => (
   <Row>
     <Col s={2} m={2} >
       <img src={props.avatar} className="circle responsive-img" alt='Avatar'/>
@@ -14,4 +14,4 @@ const Generico = (props) => (
   </Row>
 );
 
-export default Generico;
+export default Generic;

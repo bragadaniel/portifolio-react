@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { Card } from 'react-materialize';
-import Generico from '../generico/Generico';
+import Generic from '../Generic';
 
 const Experience = (props) => (
   <Card>
-    <Generico
+    <Generic
       title={props.title}
       company={props.company}
       description={props.description}

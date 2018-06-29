@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { Row, Col, Card } from 'react-materialize';
-import UserProfile from '../user_profile/User_profile';
-import Experience from '../experience/Experience';
+import UserProfile from '../UserProfile';
+import Experience from '../Experience';
 
-import company_avatar from '../../images/company.png';
-import company_avatar2 from '../../images/company2.png';
+import company_avatar from '../../assets/img/company.png';
+import company_avatar2 from '../../assets/img/company2.png';
 
 const Home = () => (
   <Row>
