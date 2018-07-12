@@ -4,16 +4,21 @@ import { Card, Row, Col, Button, Input } from 'react-materialize';
 class Form extends Component {
   constructor(props){
     super(props)
-    this.state = { value: '' };
+    this.state = { login: '', password: '' };
   }
   handleOnSubmit = event => {
     event.preventDefault()
   }
+
   handleChange = event => {
-    this.setState({value: event.target.value})
+    this.setState({ [event.target.name]: event.target.value })
   }
 
   render (){
+    const {
+      login,
+      password
+    } = this.state;
     return (
       <Col offset={`m3`} m={6} s={12}>
         <Card>
@@ -24,6 +29,8 @@ class Form extends Component {
                 placeholder="email@email.com" 
                 type="email" 
                 label="E-mail"
+                name="login"
+                value={login}
                 autoComplete="off"
                 onChange={ this.handleChange } 
                 s={12}
@@ -34,6 +41,8 @@ class Form extends Component {
                 type="password" 
                 label="Password" 
                 autoComplete="off"
+                name="password"
+                value={password}
                 onChange={ this.handleChange } 
                 s={12} 
                 />
