@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 import { Card, Row, Col, Button, Input } from 'react-materialize';
 
 class Form extends Component {
-  constructor(props){
-    super(props)
-    this.state = { login: '', password: '' };
-  }
+  state = { login: '', password: '' }
+
   handleOnSubmit = event => {
     event.preventDefault()
   }
